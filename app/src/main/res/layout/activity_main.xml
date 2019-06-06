@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_main_bottom_menu">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fac_main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_main_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc">
+
+
+        <RadioGroup
+            android:id="@+id/rg_tabs_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/mian_rg_tab_style"
+                android:drawableTop="@drawable/selected_main_top_tab_mine"
+                android:text="@string/str_mine" />
+
+            <RadioButton
+                android:id="@+id/rb_yours"
+                style="@style/mian_rg_tab_style"
+                android:drawableTop="@drawable/selected_main_top_tab_yours"
+                android:text="@string/str_yours" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/rg_tabs_2"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <RadioButton
+                android:drawableTop="@drawable/selected_main_top_tab_his"
+                android:id="@+id/rb_his"
+                style="@style/mian_rg_tab_style"
+                android:text="@string/str_his" />
+
+            <RadioButton
+                android:drawableTop="@drawable/selected_main_top_tab_hers"
+                android:id="@+id/rb_hers"
+                style="@style/mian_rg_tab_style"
+                android:text="@string/str_hers" />
+        </RadioGroup>
+    </FrameLayout>
+
+
+</RelativeLayout>

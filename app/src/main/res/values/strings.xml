@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">New_Course</string>
+    <string name="str_yours">你的</string>
+    <string name="str_mine">我的</string>
+    <string name="str_his">它的</string>
+    <string name="str_hers">他的</string>
+</resources>
