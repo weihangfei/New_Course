@@ -48,7 +48,6 @@
                 style="@style/mian_rg_tab_style"
                 android:drawableTop="@drawable/selected_main_top_tab_yours"
                 android:text="@string/str_yours" />
-
         </RadioGroup>
 
 
@@ -73,6 +72,4 @@
                 android:text="@string/str_hers" />
         </RadioGroup>
     </FrameLayout>
-
-
 </RelativeLayout>

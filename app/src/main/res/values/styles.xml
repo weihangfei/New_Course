@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
     <style name="mian_rg_tab_style">
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>

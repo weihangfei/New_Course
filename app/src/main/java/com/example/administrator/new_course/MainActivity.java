@@ -75,7 +75,6 @@ public class MainActivity extends BaseActivity {
 
                 isChangeTopOrBottom = !isChangeTopOrBottom;
 
-
                 if (isChangeTopOrBottom) {
                     changeAnima(rg_tabs1, rg_tabs2);
                 } else {
