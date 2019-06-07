@@ -20,6 +20,7 @@ public class BaseActivity extends AppCompatActivity {
             int mainLayoutId = annotatin.mainLayoutid();
 
             if (mainLayoutId > 0){
+
                 setContentView(mainLayoutId);
                 ButterKnife.bind(this);
             }else{
