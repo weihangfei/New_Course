@@ -1,4 +1,4 @@
-package com.example.administrator.new_course.base;
+package com.example.administrator.new_course;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,23 +13,30 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        ViewInject annotatin =  this.getClass().getAnnotation(ViewInject.class);
+        ViewInject annotatin = this.getClass().getAnnotation(ViewInject.class);
 
-        if (annotatin != null ){
+        if (annotatin != null) {
 
             int mainLayoutId = annotatin.mainLayoutid();
 
-            if (mainLayoutId > 0){
+            if (mainLayoutId > 0) {
 
                 setContentView(mainLayoutId);
                 ButterKnife.bind(this);
-            }else{
-                throw new RuntimeException("annotatin为空");
+                bindView();
+
+            } else {
+                throw new RuntimeException("mainLayoutId < 0");
             }
 
-        }else{
-            throw  new RuntimeException("annotatin小于0");
+        } else {
+            throw new RuntimeException("annotatin = null");
         }
 
+    }
+
+
+    private void bindView(){
+        ButterKnife.bind(this);
     }
 }

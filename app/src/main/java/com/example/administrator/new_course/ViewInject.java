@@ -1,4 +1,4 @@
-package com.example.administrator.new_course.base;
+package com.example.administrator.new_course;
 
 
 import java.lang.annotation.Retention;

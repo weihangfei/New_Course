@@ -23,4 +23,8 @@
         <item name="android:layout_weight">1</item>
     </style>
 
+    <style name="dp_50">
+        <item name="android:layout_height">50dp</item>
+    </style>
+
 </resources>
